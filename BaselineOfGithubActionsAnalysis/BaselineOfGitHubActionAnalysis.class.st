@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfGitHubActionAnalysis,
+	#name : #BaselineOfGithubActionAnalysis,
 	#superclass : #BaselineOf,
 	#category : #BaselineOfGithubActionsAnalysis
 }
 
 { #category : #baselines }
-BaselineOfGitHubActionAnalysis >> baseline: spec [
+BaselineOfGithubActionAnalysis >> baseline: spec [
 	<baseline>
 	spec for: #common do: [ 
 			
@@ -17,8 +17,8 @@ BaselineOfGitHubActionAnalysis >> baseline: spec [
 			
 			"Packages"
 			spec 
-				package: 'GitHubActionsAnalysis';
-				package: 'GitHubActionsAnalysis' with: [ spec requires: #('PetitParser'  'Roassal3') ].
+				package: 'GithubActionsAnalysis';
+				package: 'GithubActionsAnalysis' with: [ spec requires: #('PetitParser'  'Roassal3') ].
 			]
 
 			"Groups"
