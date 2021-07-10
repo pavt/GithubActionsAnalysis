@@ -17,8 +17,8 @@ BaselineOfGitHubActionAnalysis >> baseline: spec [
 			
 			"Packages"
 			spec 
-				package: 'GitHubActionAnalysis';
-				package: 'GitHubActionAnalysis' with: [ spec requires: #('PetitParser'  'Roassal3') ].
+				package: 'GitHubActionsAnalysis';
+				package: 'GitHubActionsAnalysis' with: [ spec requires: #('PetitParser'  'Roassal3') ].
 			]
 
 			"Groups"
