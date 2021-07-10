@@ -10,18 +10,14 @@ BaselineOfGithubActionAnalysis >> baseline: spec [
 	spec for: #common do: [ 
 			
 			"External dependencies"
-			spec 
-				baseline: 'Roassal3' with: [ spec repository: 'github://ObjectProfile/Roassal3/src'].
-			spec 
-				baseline: 'PetitParser' with: [ spec repository: 'github://moosetechnology/PetitParser/src' ].
+			spec baseline: 'Roassal3' 
+				with: [ spec repository: 'github://ObjectProfile/Roassal3/src'].
+			spec baseline: 'PetitParser' 
+				with: [ spec repository: 'github://moosetechnology/PetitParser/src' ].
 			
 			"Packages"
 			spec 
 				package: 'GithubActionsAnalysis';
-				package: 'GithubActionsAnalysis-Test' with: [ spec requires: #('PetitParser'  'Roassal3') ].
+				package: 'GithubActionsAnalysis-Test' with: [ spec requires: #('GithubActionsAnalysis') ].
 			].
-
-			"Groups"
-			"spec
-				group: 'default' with: #('GithubActionsAnalysis') ]"
 ]
