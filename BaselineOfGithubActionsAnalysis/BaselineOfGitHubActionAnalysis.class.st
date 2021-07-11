@@ -18,6 +18,6 @@ BaselineOfGithubActionAnalysis >> baseline: spec [
 			"Packages"
 			spec 
 				package: 'GithubActionsAnalysis';
-				package: 'GithubActionsAnalysis-Test' with: [ spec requires: #('GithubActionsAnalysis') ].
+				package: 'GithubActionsAnalysis-Test' "with: [ spec requires: #('GithubActionsAnalysis') ]".
 			].
 ]
