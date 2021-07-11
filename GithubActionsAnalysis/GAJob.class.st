@@ -1,3 +1,6 @@
+"
+This is a Job belonging to a Github Action
+"
 Class {
 	#name : #GAJob,
 	#superclass : #GAObject,
