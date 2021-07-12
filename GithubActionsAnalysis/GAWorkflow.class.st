@@ -55,7 +55,7 @@ GAWorkflow >> numberOfJobs [
 	^ jobs size
 ]
 
-{ #category : #initialization }
+{ #category : #accessing }
 GAWorkflow >> numberOfSteps [
 	jobs ifEmpty:[ ^ 0 ].
 	^ (jobs collect: #numberOfSteps) sum

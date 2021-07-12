@@ -11,9 +11,9 @@ BaselineOfGithubActionAnalysis >> baseline: spec [
 			
 			"External dependencies"
 			spec baseline: 'Roassal3' 
-				with: [ spec repository: 'github://ObjectProfile/Roassal3/src'].
+				with: [ spec repository: 'github://ObjectProfile/Roassal3'].
 			spec baseline: 'PetitParser' 
-				with: [ spec repository: 'github://moosetechnology/PetitParser/src' ].
+				with: [ spec repository: 'github://moosetechnology/PetitParser:v3.x.x/src' ].
 			
 			"Packages"
 			spec 

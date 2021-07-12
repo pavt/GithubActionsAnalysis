@@ -16,6 +16,12 @@ GAJob >> addStep: aStep [
 	steps add: aStep
 ]
 
+{ #category : #initialization }
+GAJob >> initialize [
+	super initialize.
+	steps := OrderedCollection new
+]
+
 { #category : #accessing }
 GAJob >> name [
 
