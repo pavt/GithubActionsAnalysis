@@ -9,3 +9,15 @@ Class {
 	],
 	#category : #GithubActionsAnalysis
 }
+
+{ #category : #accessing }
+GAModel >> workflows [
+
+	^ workflows
+]
+
+{ #category : #accessing }
+GAModel >> workflows: anObject [
+
+	workflows := anObject
+]
