@@ -46,6 +46,14 @@ GAModel >> initialize [
 ]
 
 { #category : #accessing }
+GAModel >> inspectorCanvas [
+	<inspectorPresentationOrder: 90 title: 'Visualization'>
+	^ SpRoassal3InspectorPresenter new
+		canvas: self visualize;
+		yourself 
+]
+
+{ #category : #accessing }
 GAModel >> numberOfJobs [
 	workflows ifEmpty: [ ^ 0 ].
 	^ (workflows collect: #numberOfJobs) sum

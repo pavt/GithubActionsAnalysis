@@ -26,6 +26,12 @@ GAWorkflow >> filename: anObject [
 	filename := anObject
 ]
 
+{ #category : #initialization }
+GAWorkflow >> initialize [
+	super initialize.
+	jobs := OrderedCollection new
+]
+
 { #category : #accessing }
 GAWorkflow >> jobs [
 
