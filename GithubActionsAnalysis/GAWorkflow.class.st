@@ -9,6 +9,11 @@ Class {
 	#category : #GithubActionsAnalysis
 }
 
+{ #category : #adding }
+GAWorkflow >> addJob: aJob [
+	jobs add: aJob
+]
+
 { #category : #accessing }
 GAWorkflow >> filename [
 
@@ -43,4 +48,22 @@ GAWorkflow >> name [
 GAWorkflow >> name: anObject [
 
 	name := anObject
+]
+
+{ #category : #accessing }
+GAWorkflow >> numberOfJobs [
+	^ jobs size
+]
+
+{ #category : #initialization }
+GAWorkflow >> numberOfSteps [
+	jobs ifEmpty:[ ^ 0 ].
+	^ (jobs collect: #numberOfSteps) sum
+]
+
+{ #category : #initialization }
+GAWorkflow >> printOn: str [
+	str nextPut: $<.
+	name ifNotNil: [ str nextPutAll: name ].
+	str nextPut: $>.
 ]

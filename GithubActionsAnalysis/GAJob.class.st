@@ -11,6 +11,11 @@ Class {
 	#category : #GithubActionsAnalysis
 }
 
+{ #category : #adding }
+GAJob >> addStep: aStep [
+	steps add: aStep
+]
+
 { #category : #accessing }
 GAJob >> name [
 
@@ -21,6 +26,11 @@ GAJob >> name [
 GAJob >> name: anObject [
 
 	name := anObject
+]
+
+{ #category : #initialization }
+GAJob >> numberOfSteps [
+	^ steps size
 ]
 
 { #category : #accessing }
